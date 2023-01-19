@@ -12,6 +12,8 @@ Parser is designed to help you understand when your contacts are present during 
 ```virtualenv venv```
 - Install dependencies  
 ```pip3 install -r requirements.txt```
+- Get migrations  
+```python3 manage.py migrate```
 - Launch code  
 ```python3 manage.py gather_data```
 
