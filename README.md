@@ -18,9 +18,9 @@ Parser is designed to help you understand when your contacts are present during 
 ## Cron jobs
 
 It is recomended to set up a cronjob for this script as per the frequency you need:  
-"""hash
+```bash
 */20 * * * * /home/linkedin_parser/venv/bin/python3.7 /home/linkedin_parser/manage.py gather_data >> /home/logs.txt 2>&1
-"""
+```
 Adding this line to crontab will launch script from linkedin_parser every 20 minutes.
 
 ## Environment variables
