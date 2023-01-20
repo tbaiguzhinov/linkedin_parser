@@ -16,9 +16,6 @@ class Command(BaseCommand):
         password = env('LINKEDIN_PASSWORD')
         connections = login(email=email, password=password)
 
-        with open('file_for_parsing.txt', 'r', encoding='utf-8') as file:
-            connections = file.read()
-
         soup = BeautifulSoup(connections, 'lxml')
 
         lis = soup.find_all('li')
